@@ -3,8 +3,8 @@ import java.util.List;
 
 public class Student {
 
-  private String name;
-  private List<Book> books = new ArrayList<>();
+  private final String name;
+  private final List<Book> books = new ArrayList<>();
 
   public Student(String name) {
     this.name = name;

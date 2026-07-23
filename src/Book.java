@@ -1,9 +1,8 @@
 public class Book {
 
-
   String title;
   int year;
-  private int pagesCount;
+  private final int pagesCount;
 
   public Book(String name, int releaseDate, int pagesCount) {
     this.title = name;
@@ -38,7 +37,6 @@ public class Book {
 
   @Override
   public int hashCode() {
-    java.util.Objects.hash(title, year);
     return java.util.Objects.hash(title, year);
   }
 }
