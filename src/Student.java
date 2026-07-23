@@ -23,7 +23,7 @@ public class Student {
     return "Студент: " + name;
   }
 
-  public String Info() {
+  public String info() {
     return name + " взял книги: " + books;
   }
 }

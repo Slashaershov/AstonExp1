@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class Reader {
 
-  public static List<Student> GetStudents(String address) {
+  public static List<Student> getStudents(String address) {
     Map<String, Student> map = new HashMap<>();
 
     try (BufferedReader reader = new BufferedReader(new FileReader(address))) {

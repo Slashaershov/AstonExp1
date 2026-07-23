@@ -4,11 +4,11 @@ import java.util.List;
 public class Main {
 
   public static void main(String[] args) {
-    List<Student> students = Reader.GetStudents("src/students.txt");
-    DoSomething(students);
+    List<Student> students = Reader.getStudents("src/students.txt");
+    doSomething(students);
   }
 
-  private static void DoSomething(List<Student> studentsList) {
+  private static void doSomething(List<Student> studentsList) {
     System.out.println(
         studentsList.stream()
             .peek(System.out::println)
